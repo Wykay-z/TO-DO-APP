@@ -70,11 +70,11 @@ body {
 }
 
 ul#todo {
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 	position: relative;
 }
 ul#completed {
-	padding-top: 40px;
+	padding-top: 20px;
 	position: relative;
 }
 ul#completed:before {
@@ -94,7 +94,7 @@ ul.list li {
 	background: #fff;
 	border-radius: 5px;
 	box-shadow: 0 2px 6px rgba(0,0,0,.1);
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 50px;
@@ -183,18 +183,15 @@ ul#completed button.complete:hover svg .fill  {
 }
 
 /* placehold reminder when list is empty*/
-/*ul#todo:empty:after {
-	content: "You have nothing to do";
-}
-ul#completed:after {
-	content: "You have yet to complete any tasks";
-}*/
-ul#todo:after, ul#completed:after {
+ul#todo span, ul#completed span {
 	width: 100%;
-	display: block;
+	display: none;
 	text-align: center;
 	font-size: 12px;
 	color: #aaa;
+}
+ul#todo span {
+	margin-top: 5px;
 }
 
 
