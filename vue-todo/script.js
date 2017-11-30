@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 850122e05c93099e0cfe6e0af69572473e9ba6ba
 var todoStorage = {
 	fetch: function() {
 		var data = (localStorage.getItem("todolist")) ? JSON.parse(localStorage.getItem("todolist")) : {
@@ -15,10 +10,6 @@ var todoStorage = {
 		localStorage.setItem("todolist", JSON.stringify({todo, completed}));
 	}
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 850122e05c93099e0cfe6e0af69572473e9ba6ba
 var app = new Vue({
   el: '#app',
   data: {
